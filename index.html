@@ -7,9 +7,9 @@
 </head>
 <body>
     <canvas id="canvas" 
-    width="300"
-    height="300"
-    style="background-color: black;">
+    width="700"
+    height="700"
+    style="background-color: rgb(50, 50, 50);">
 
     </canvas>
     <script>
@@ -21,18 +21,30 @@
         canvas.addEventListener("mousemove", (event) =>{
          console.log(event);
 
-         context.clearRect(0,0,300,300);//clear screen
+         //context.clearRect(0,0,300,300);//clear screen
          context.beginPath();
-        context.fillStyle = "blue";
-        context.arc(event.clientX,event.clientY,40,0,360);
-        context.fill();
-        context.beginPath();
-        context.fillStyle = "red";
+        context.fillStyle = "black";
         context.arc(event.clientX,event.clientY,25,0,360);
         context.fill();
         context.beginPath();
-        context.fillStyle = "orange";
-        context.arc(event.clientX,event.clientY,10,0,360);
+        context.fillStyle = "gray";
+        context.arc(event.clientX,event.clientY,20,0,360);
+        context.fill();
+        context.beginPath();
+        context.fillStyle = "white";
+        context.arc(event.clientX,event.clientY,15,0,360);
+        context.fill();
+        context.beginPath();
+        context.fillStyle = "black";
+        context.arc(event.clientX,event.clientY,12,0,360);
+        context.fill();
+        context.beginPath();
+        context.fillStyle = "gray";
+        context.arc(event.clientX,event.clientY,9,0,360);
+        context.fill();
+        context.beginPath();
+        context.fillStyle = "white";
+        context.arc(event.clientX,event.clientY,5,0,360);
         context.fill();
 
         });
